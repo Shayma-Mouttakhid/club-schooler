@@ -4,9 +4,10 @@ import "./Navbar.css";
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container ">
-                <Link className="navbar-brand" to="/">ClubSchooler</Link>
+        <nav className="navbar navbar-expand-lg  ">
+            <img alt="ofppt-logo" src="./img/Logo_ofppt.png"  />
+                <h3 className="navbar-brand">
+                    ClubSchooler</h3>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -21,17 +22,17 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/login">Se Connecter</Link>
+                            <Link className="nav-link" to="/">Se Connecter</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/signup">Sign Up</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">About-Us</Link>
+                            <Link className="nav-link" to="/About">About-Us</Link>
                         </li>
                     </ul>
                 </div>
-            </div>
+           
         </nav>
     );
 }

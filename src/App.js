@@ -7,25 +7,21 @@ import "./App.css";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login"
 import Navbar from "./pages/Navbar/Navbar";
-import Home from "./pages/about/About";
+import About from "./pages/about/About"
 
 function App() {
   useEffect(() => {
-    // Add any necessary cleanup for the useEffect hook here
-    // For example, removing event listeners
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
+    
   }, []);
 
   return (
-    <div className="App">
+    <div className="container-fluide">
       <BrowserRouter>
-        <div className="container">
+        <div>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>

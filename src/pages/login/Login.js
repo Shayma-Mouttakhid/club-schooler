@@ -52,7 +52,7 @@ export default function Login() {
             />
           </label>
           <button type="submit">submit</button>
-          <button onClick={handleSignupClick}>signup </button>
+          <button onClick={handleSignupClick}>Signup </button>
         </form>
       )}
     </div>
